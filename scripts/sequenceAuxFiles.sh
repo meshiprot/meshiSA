@@ -9,8 +9,8 @@ target_name=$1
 decoyPath=$2
 outputPath=$3
 
- echo "java -cp $APP_PATH/meshi9.38_light.jar programs.Pdb2Fasta"
-java -cp $APP_PATH/meshi9.38_light.jar programs.Pdb2Fasta
+ echo "java -cp $APP_PATH/meshi.jar programs.Pdb2Fasta"
+java -cp $APP_PATH/meshi.jar programs.Pdb2Fasta
  mv  $decoyPath.fasta  $outputPath/$target_name.fasta
 
 echo "$APP_SCRIPTS/sequenceAuxCalc.sh $outputPath/$target_name.fasta"

@@ -19,7 +19,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 MESHI-Score Software
 ********************
 
-The meshiAS software is the standalone version of the MESHI-Score function of Keasar group. Based on meshi9.38_light java package.
+The meshiAS software is the standalone version of the MESHI-Score function of Keasar group. Based on meshi java package.
 It is an EMA (Estimation of Model Accuracy) function. It is designed to produce a score in the range of (0,1) to predict the quality of the protein model.
 Additional info can be found here: 10.1109/TCBB.2016.2602269
 Version 1.0
@@ -66,7 +66,7 @@ cd [APP_PATH]/aux/uniref90
 vii. Download meshi_package
 
 parameters/
-meshi9.38_light.jar
+meshi.jar
 
 1. Installation (B):
 -------------------

@@ -3,21 +3,29 @@ distanceConstraints weight 1
 
 conserved 9999
 
-parameters /home/cluster/users/siditom/code/meshiSA_v1.2/parameters/
+parameters /home/cluster/users/siditom/code/meshiSA/new/meshiSA/parameters/
+dsspExecPath /home/cluster/users/siditom/code/meshiSA/new/meshiBatch/aux/dssp/dsspcmbi
+scwrlExecPath /home/cluster/users/siditom/code/meshiSA/new/meshiBatch/aux/scwrl4/Scwrl4
+
 auxPath		     ./
+deepCNF3Compatibility weight -99999999.9999
+deepCNF3FileName ss3DeepCNF
+deepCNF8FileName ss8DeepCNF
 predictedSsFileName  secondaryStructurePrediction
 predictedAccFileName sasaPrediction
-atomEnvironmentParameters /home/cluster/users/siditom/code/meshiSA_v1.2/parameters/meshiPotential/atomEnvironmentAll.xml
-atomEnvironmentParametersHelix /home/cluster/users/siditom/code/meshiSA_v1.2/parameters/meshiPotential/atomEnvironmentHelix.xml
-atomEnvironmentParametersSheet /home/cluster/users/siditom/code/meshiSA_v1.2/parameters/meshiPotential/atomEnvironmentSheet.xml
-atomEnvironmentParametersCoil /home/cluster/users/siditom/code/meshiSA_v1.2/parameters/meshiPotential/atomEnvironmentCoil.xml
-selectionScore /home/cluster/users/siditom/code/meshiSA_v1.2/score_functions/ScoreF_WeightedEvaluationFunction.xml    optimizationScore
-selectionScore /home/cluster/users/siditom/code/meshiSA_v1.2/score_functions/ScoreF_WeightedEvaluationFunction+GOAP.xml    score1
-selectionScore /home/cluster/users/siditom/code/meshiSA_v1.2/score_functions/score.xml score2
-metaSelectionScore /home/cluster/users/siditom/code/meshiSA_v1.2/score_functions/MESHI_SCORE.xml MESHI.SERVER
-rapdfoutputfile /home/cluster/users/siditom/code/meshiSA_v1.2/parameters/meshiPotential/SamudralaParametersAstralNotWeighted.dat
+atomEnvironmentParameters /home/cluster/users/siditom/code/meshiSA/new/meshiSA/parameters/meshiPotential/atomEnvironmentAll.xml
+atomEnvironmentParametersHelix /home/cluster/users/siditom/code/meshiSA/new/meshiSA/parameters/meshiPotential/atomEnvironmentHelix.xml
+atomEnvironmentParametersSheet /home/cluster/users/siditom/code/meshiSA/new/meshiSA/parameters/meshiPotential/atomEnvironmentSheet.xml
+atomEnvironmentParametersCoil /home/cluster/users/siditom/code/meshiSA/new/meshiSA/parameters/meshiPotential/atomEnvironmentCoil.xml
 
-# verbose
+selectionScore /home/cluster/users/siditom/code/meshiSA/new/meshiSA/score_functions/ScoreF_WeightedEvaluationFunction.xml    optimizationScore
+selectionScore /home/cluster/users/siditom/code/meshiSA/new/meshiSA/score_functions/ScoreF_WeightedEvaluationFunction+GOAP.xml    score1
+selectionScore /home/cluster/users/siditom/code/meshiSA/new/meshiSA/score_functions/score.xml score2
+metaSelectionScore /home/cluster/users/siditom/code/meshiSA/new/meshiSA/score_functions/MESHI_SCORE.xml MESHI.SERVER
+
+rapdfoutputfile /home/cluster/users/siditom/code/meshiSA/new/meshiSA/parameters/meshiPotential/SamudralaParametersAstralNotWeighted.dat
+
+ # verbose
 
 # Weights for the energy terms
 bondEnergy weight 100

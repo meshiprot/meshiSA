@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APP_PATH=/home/cluster/users/siditom/code/meshiSA_v1.2
+APP_PATH=/home/cluster/users/siditom/code/meshiSA/new/meshiSA
 export APP_PATH
 
 if [ $# -lt 1 ]; then
@@ -24,8 +24,8 @@ cd $out
 iDecoy=`basename $decoy_path`
 sDecoy=`basename $iDecoy | sed -e 's/.\w*$//' `.scwrl.pdb
 
-echo "java -Xmx4000m -jar $APP_PATH/meshi9.38_light.jar -commands=$APP_PATH/commands -inFileName=$sDecoy" >>  $out/meshi.log
-java -Xmx4000m -jar $APP_PATH/meshi9.38_light.jar -commands=$APP_PATH/commands -inFileName=$sDecoy
+echo "java -Xmx4000m -jar $APP_PATH/meshi.jar -commands=$APP_PATH/commands -inFileName=$sDecoy" >>  $out/meshi.log
+java -Xmx4000m -jar $APP_PATH/meshi.jar -commands=$APP_PATH/commands -inFileName=$sDecoy
 
 if [ ${remove_tmp} -eq 1 ]; then
 	cd ..
